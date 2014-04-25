@@ -97,7 +97,7 @@ int main(void){  unsigned long i,last,now, last_state;
       Time[i] = (last-now)&0x00FFFFFF;  // 24-bit time difference
       Data[i] = GPIO_PORTF_DATA_R&0x13; // record PF4,1,0
       last = now;
-			last_state = GPIO_PORTF_DATA_R&0x13;
+	  last_state = GPIO_PORTF_DATA_R&0x13;
       i++;
     }
     Delay();
